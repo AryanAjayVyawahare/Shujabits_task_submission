@@ -1,0 +1,47 @@
+input.ng-invalid.ng-touched{
+    border:red 2px solid;
+ }
+
+small{
+  color: red;
+  font-weight: bold;
+ }
+
+
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //height: 50%;
+   
+    .card{
+        // background-image: url('https://png.pngtree.com/background/20240115/original/pngtree-3d-rendered-image-illustrating-the-concept-of-coding-and-programming-picture-image_7283662.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.4);
+        //box-shadow: 50%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2) blur;
+       // height: 50%;
+
+        // transform: perspective(1000px) rotateX(1deg) rotateY(1deg);
+      // transition: transform 0.3s ease;
+    }
+
+ 
+        
+    }
+ 
+
+
+ .form-label{
+    color: rgb(18, 17, 17);
+    
+ }
+
+ p{
+  color: black;
+ }

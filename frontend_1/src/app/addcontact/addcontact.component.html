@@ -1,0 +1,51 @@
+<div class="col-md-8 mx-auto">
+    <div class="card h-100 shadow">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">Add Developer Form</h4>
+      </div>
+  
+      <div class="card-body">
+        <form [formGroup]="contactform" (ngSubmit)="contacts()">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Student Name" formControlName="name">
+            <small class="text-danger" *ngIf="contactform.get('name')?.invalid && contactform.get('name')?.touched">Name is required.</small>
+          </div>
+  
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone" placeholder="Phone Number" formControlName="phone">
+            <small class="text-danger" *ngIf="contactform.get('phone')?.invalid && contactform.get('phone')?.touched">Phone is required.</small>
+          </div>
+  
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+            <small class="text-danger" *ngIf="contactform.get('email')?.invalid && contactform.get('email')?.touched">Valid email is required.</small>
+          </div>
+  
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="Description" formControlName="description">
+            <small class="text-danger" *ngIf="contactform.get('description')?.invalid && contactform.get('description')?.touched">Description is required.</small>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" formControlName="date">
+            <small class="text-danger" *ngIf="contactform.get('date')?.invalid && contactform.get('date')?.touched">Date is required.</small>
+          </div>
+          
+  
+          <div class="text-end">
+            <!-- Save Button with margin to the right -->
+            <button type="submit" class="btn btn-primary me-2" [disabled]="contactform.invalid">Save</button>
+            
+            <!-- Close Button -->
+            <button type="button" class="btn btn-danger" (click)="close()">Close</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  

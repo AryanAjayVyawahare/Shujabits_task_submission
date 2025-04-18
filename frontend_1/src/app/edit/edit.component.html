@@ -1,0 +1,74 @@
+<div class="col-md-8 mx-auto">
+  <div class="card h-100 shadow">
+    <div class="card-header">
+      <div class="d-flex justify-content-between">
+        <h3 class="mb-0">Edit FORM</h3>
+        <!-- <button type="button" class="btn btn-danger"(click)="navigateTologinpage()">Back</button>  -->
+      </div>
+    </div>
+    <div>
+      <div class="card-body">
+        <form class="form" [formGroup]="editform">
+          <div class="mb-3">
+            <label for="studentname" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="studentname"
+              placeholder="Student Name"
+              formControlName="name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input
+              type="number"
+              class="form-control"
+              id="phone"
+              placeholder="Phone Number"
+              formControlName="phone"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              placeholder="Email"
+              formControlName="email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              placeholder="Description"
+              formControlName="description"
+            />
+          </div>
+
+          <!-- 📅 Date Field -->
+          <div class="mb-3">
+            <label for="date" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="date"
+              formControlName="date"
+            />
+          </div>
+
+          <div class="mb-0">
+            <button type="submit" class="btn btn-primary" (click)="update()">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
